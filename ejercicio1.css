@@ -1,0 +1,147 @@
+* {
+
+    overflow: auto;
+}
+
+
+body {
+    background-color: #041B15;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-width: 350px;
+    overflow: auto;
+}
+
+div.content {
+
+    background-color: #136F63;
+    padding: 5%;
+    box-shadow: #4CE0D2 0px 0px 10px 10px ;
+}
+
+
+.foto {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+div.center {
+
+    text-align: center;
+    color: #84CAE7;
+}
+
+p.center {
+
+    text-align: center;
+    color: #22AAA1;
+}
+
+div.combo1 {
+    position: relative;
+    background-color: bisque;
+
+}
+
+div.table {
+    position:absolute; 
+    width: 100%;
+    bottom: 0px;
+    color: black; 
+    background-color: #4CE0D2C0;
+}
+
+div.table td {
+    text-align: center;
+    font-size: small;
+
+}
+
+img.combo1 {
+
+    max-height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+div.col1 {
+    font-size: medium;
+    color: white;
+    width: 45%;
+    display: inline-block;
+    margin-right: 10%;
+    margin-top: 20px;
+
+}
+
+div.col2 {
+    font-size: medium;
+    float: right;
+    color: white;
+    width: 45%;
+    margin-top: 20px;
+}
+
+div.col h2 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    padding-bottom: 5px;
+
+}
+
+div.bullet p {
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px 0px;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+
+table.songs p.number {
+    background-color: #136F63;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    width: 25px;
+    text-align: center;
+    /* al momento de asignar un height y un padding top, estos se suman entonces si queremos tener
+    un cuadrado perfecto: width debe ser igual a la suma dl height con padding top
+    
+    Otra opcion es usar border box, en este caso usaremos eso*/
+    height: 25px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 0;
+}
+
+table.songs td.songdetail {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+
+
+}
+
+table.songs td {
+    vertical-align: top;
+}
+
+table.songs tr {
+    height: 30px;
+
+    /* en las tablas no tienes que poner min height, solo con establecer un height ya lo considera como el minimo*/
+}
+
+
+/* el overflor sirve para que cuando el contenido exceda
+los margenes actuales, estos acompanen al contenido
+
+con el simbolo de estrella hacemos mencion a todos los segmentos del html*/
